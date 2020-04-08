@@ -29,3 +29,15 @@
 
   ​	정확도 높이는 것이 중요한 경우엔 CEE
 
+
+
+# Back Propagation
+
+> 오차를 w의 크기에 따라 나눠주는 것
+
+
+
+# 가중치 업데이트
+
+### 경사 하강법 (gradient descent)
+
