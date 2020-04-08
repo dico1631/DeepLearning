@@ -42,3 +42,31 @@
 
 ## 3. 신경망 네트워크
 
+- hidden layer
+
+  - Linear Function
+
+    ![image](https://user-images.githubusercontent.com/58927491/78734896-6677e980-7984-11ea-9d09-47669ce886f6.png)
+
+  - Activation Function
+
+    : 임계점(Threshold)를 넘으면 값을 전달하고 아니면 없애거나, 혹은 원하는 형식으로 값을 변환시키는 필터 역할
+
+    1) step Function
+
+    - 0인 값은 사라지고 0 이상인 값만 살아남는다.
+
+    2) sigmoid Function
+
+    	- 0 < F < 1 범위의 숫자로 값을 변환 : 2진 분류에서 class별 확률을 위해 나온다.
+    	- y =1 / (1 + e^(-x))    e는 자연상수 = 2.71828…
+    	- 단점 : 깊이가 깊어지면 vanishing gradient problem 발생
+
+  - tanh(a) = (exp(2a) - 1) / (exp(2a) + 1) = sinh(x) / cosh(x)
+
+    - sigmoid와 비슷한데 0과 1을 지난다. 더 classification 가능성이 다양해진다. 
+
+  - Relu
+
+    - 0 이하 = 0 / 0 초과 = 그대로 변환 ( max(0, x) )
+    - vanishing gradient problem 해결
